@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= instructions.description %>">
+  <title><%= instructions.title %></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 50px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h3 {
+      color: #666;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    code {
+      font-family: monospace;
+      background-color: #f1f1f1;
+      padding: 2px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+.back-to-top { position: fixed; bottom: 20px; right: 20px; display: none; width: 40px; height: 40px; background-color: rgba(0, 0, 0, 0.5); color: #fff; border-radius: 50%; text-align: center; line-height: 40px; cursor: pointer; } 
+    .back-to-top:before { content: '\2191'; font-size: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div>
+        <span>Unix Timestamp Converter API</span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to Unix Timestamp Converter API</h1>
+    <h3>Usage:</h3>
+    <p>To convert a Unix timestamp to a date string, make a GET request to:</p>
+    <code>https://unix-timestamp-converter.mager92838.repl.co/unix-to-date/:timestamp</code>
+    <p>Replace <code>:timestamp</code> with the desired Unix timestamp.</p>
+    <br>
+    <p>To convert a date string to a Unix timestamp, make a GET request to:</p>
+    <code>https://unix-timestamp-converter.mager92838.repl.co/date-to-unix/:date</code>
+    <p>Replace <code>:date</code> with the desired date string in the format <code>YYYY-MM-DD+HH:mm:ss</code>.</p>
+    
+    <h3>About Unix Timestamp Converter API</h3>
+    <p>Unix Timestamp Converter API is a simple API that allows you to convert Unix timestamps to date strings and vice versa. It provides a straightforward way to handle date and time conversions in your applications.</p>
+    
+    <h3>Examples</h3>
+    <p>Here are a few examples of how you can use the API:</p>
+    
+    <h4>Convert Unix timestamp to date string:</h4>
+    <p>GET /unix-to-date/1625234800</p>
+    <p>Response: { "date": "2021-07-02+12:00:00" }</p>
+    
+    <h4>Convert date string to Unix timestamp:</h4>
+<p>GET /date-to-unix/2023-07-02+10:30:00</p>
+<p>Response: { "timestamp": 1677843000 }</p>
+
+<h3>Conclusion</h3>
+<p>You can easily perform conversions between Unix timestamps and date strings. It provides a convenient API to integrate into your applications and handle date-related operations efficiently.</p>
+
+</main>
+<div class="back-to-top"></div>
+
+<script> window.addEventListener('scroll', function() { var backToTopBtn = document.querySelector('.back-to-top'); if (window.pageYOffset > 200) { backToTopBtn.style.display = 'block'; } else { backToTopBtn.style.display = 'none'; } }); document.querySelector('.back-to-top').addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); }); </script>
+</body>
+</html>
