@@ -39,4 +39,8 @@ Response:
 
 ## License
 
+This project is licensed under the [GNU General Public License (GPL)](LICENSE).
 
+The GNU General Public License is a copyleft open-source license that requires derivative works to be distributed under the same license. It allows others to use, copy, modify, and distribute your code, but any modifications or additions must also be licensed under the GPL.
+
+For more information, please see the [LICENSE](LICENSE) file.
